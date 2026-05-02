@@ -56,3 +56,28 @@ label {
     font-family: Arial;
     font-size: 14px;
 }
+img {
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+.container {
+  display: flex;
+  justify-content: space-between; /* لرمي النص لأقصى اليمين والصورة لأقصى اليسار */
+  align-items: center; /* لتوسيطهم عمودياً */
+  direction: rtl; /* يضمن أن الترتيب يبدأ من اليمين (النص أولاً) */
+  padding: 20px;
+  border-bottom: 1px solid #ccc; /* اختياري: لعمل خط فاصل مثل الصورة */
+}
+
+.text-content {
+  text-align: right; /* يضمن محاذاة النص نفسه لليمين */
+  flex: 1; /* يجعل النص يأخذ المساحة المتاحة ويترك مساحة للصورة */
+}
+
+.dish-image {
+  width: 300px; /* تحكم في حجم الصورة كما تحب */
+  height: auto;
+  margin-right: 20px; /* مسافة بين النص والصورة */
+  border-radius: 8px;
+  object-fit: cover;
+}
