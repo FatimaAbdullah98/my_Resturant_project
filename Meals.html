@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang = "ar">
+    <head>
+        <meta charset="UTF-8">
+        <title>الوجبات</title>
+        <link rel = "stylesheet" href = "css.Style.css">
+        <script src = "js.myFunctions.js"></script>
+    </head>
+    <body>
+        <h1>قائمة الوجبات</h1>
+        <table>
+            <thead>
+            <tr>
+                <th>الرمز</th>
+                <th>الوجبة</th>
+                <th>السعر</th>
+                <th>التفاصيل</th>
+                <th>اختيار</th>
+            </tr>
+            </thead>
+         
+        <tbody>
+
+            <tr>
+                <td>SF-001</td>
+                <td>وجبة سمك بوري مشوي</td>
+                <td>110000 ل.س</td>
+                <td><button onclick="toggleDetails('details1')">عرض</button></td>
+            <td><input type="checkbox"></td>
+            </tr>
+
+            <!-- سطر التفاصيل -->
+            <tr id="details1" style="display:none;">
+            <td colspan="5">
+             المطبخ: المصري<br>
+             <br>
+             تصنيف الطعام: مأكولات بحرية<br>
+             <br>
+             المكونات:<br>
+            <br>
+
+             <br>
+            4 سمكات بوري أحمر , مغسول ومنظف <br>
+             بضعة أوراق مقطعة من الأوريجانو الطازج <br>
+             ملعقة صغيرة واحدة من ملح الطعام<br>
+             ملعقة صغيرة واحدة من الفلفل الأسود المطحون<br>
+            <br>
+             الصلصة:<br>
+           • ملعقة كبيرة من زيت الزيتون. <br>  
+           • 3 فصوص ثوم مقشرة ومقطعة بشكل ناعم. <br>
+           • 1 حبة فلفل أحمر طازج، منزوعة البذور ومقطعة إلى شرائح رفيعة.  <br>
+           • بضعة أغصان من إكليل الجبل الطازجة. <br>
+           • 6 حبات طماطم طرية، مفرومة. <br>
+           • 1/2 ليمونة معصورة<br>
+
+            </td>
+            </tr>
+
+            <tr>
+            <td>SF-002</td>
+            <td>شاورما</td>
+            <td>50000</td>
+            <td>
+            <button onclick="toggleDetails('details2')">عرض</button>
+            </td>
+            <td><input type="checkbox"></td>
+            </tr>
+
+            <!-- سطر التفاصيل -->
+            <tr id="details2" style="display:none;">
+            <td colspan="5">
+             المطبخ: السوري<br>
+             <br>
+             تصنيف الطعام: شاورما دجاج<br>
+             <br>
+             المكونات:<br>
+            <br>
+
+             <br>
+            صدور دجاج مقطعة لشرائح رفيعة <br>
+             عصير الليمون , زيت زيتون , لبن زبادي , هيل مطحون , ثوم مهروس , <br>
+             ملعقة صغيرة واحدة من ملح الطعام<br>
+             ملعقة صغيرة واحدة من الفلفل الأسود المطحون<br>
+            <br>
+             التومية (المايونيز):<br>
+           • 3 ملاعق كبيرة من النشاء , 1 كوب ماء. <br>  
+           • 3 فصوص ثوم مقشرة ومقطعة بشكل ناعم. <br>
+           • نصف كوب زيت نباتي (ذرة أو عباد الشمس).  <br>
+           • ملعقة كبيرة من عصير الليمون. <br>
+           • ملعقة كبيرة من الخل الأبيض. <br>
+
+            </td>
+            </tr>
+
+            <tr>
+            <td>SF-003</td>
+            <td>بيتزا</td>
+            <td>75000</td>
+            <td>
+            <button onclick="toggleDetails('details3')">عرض</button>
+            </td>
+            <td><input type="checkbox"></td>
+            </tr>
+
+            <!-- سطر التفاصيل -->
+            <tr id="details3" style="display:none;">
+            <td colspan="5">
+             المطبخ: الإيطالي<br>
+             <br>
+             تصنيف الطعام: الوجبات السريعة<br>
+             <br>
+             المكونات:<br>
+            <br>
+
+             <br>
+            عجينة (دقيق , خميرة , ماء , زيت , سكر , ملح) <br>
+             صلصة طماطم <br>
+             جبنة الموزاريلا<br>
+             طماطم , أوريجانو , زيتون أسود مقطع لشرائح , فلفل أخضر مقطع لشرائح<br>
+            <br>
+              صوص الطماطم :<br>
+           • 4 حبات طماطم كبيرة مقشرة ومفرومة ناعم. <br>  
+           • 2 فص ثوم مهروس. <br>
+           • ملعقتان كبيرتان من زيت الزيتون  <br>
+
+            </td>
+            </tr>
+
+            <tr>
+            <td>SF-004</td>
+            <td>برغر</td>
+            <td>60000</td>
+            <td>
+            <button onclick="toggleDetails('details4')">عرض</button>
+            </td>
+            <td><input type="checkbox"></td>
+            </tr>
+
+             <!-- سطر التفاصيل -->
+            <tr id="details4" style="display:none;">
+            <td colspan="5">
+             المطبخ: الاميركي<br>
+             <br>
+             تصنيف الطعام: الوجبات السريعة<br>
+             <br>
+             المكونات:<br>
+            <br>
+
+             <br>
+            قرص لحم مفروم (لحم بقري) <br>
+             خبز همبرغر طري  <br>
+             شرائح من جبن الشيدر<br>
+             خس , شرائح طماطم , بصل , خيار مخلل<br>
+            <br>
+              الصوصات :<br>
+           • المايونيز. <br>  
+           • كاتشب. <br>
+           • خردل  <br>
+
+            </td>
+            </tr>
+
+            <tr>
+            <td>SF-005</td>
+            <td>كباب</td>
+            <td>90000</td>
+            <td>
+            <button onclick="toggleDetails('details5')">عرض</button>
+            </td>
+            <td><input type="checkbox"></td>
+            </tr>
+
+            <!-- سطر التفاصيل -->
+            <tr id="details5" style="display:none;">
+            <td colspan="5">
+             المطبخ: السوري<br>
+             <br>
+             تصنيف الطعام: اللحوم المشوية<br>
+             <br>
+             المكونات:<br>
+            <br>
+
+             <br>
+             لحم مفروم (ضأن أو عجل)<br>
+             بصل مفروم ناعم  <br>
+             بقدونس <br>
+             ملعقة صغيرة من الملح , ملعقة صغيرة من الفلف الأسود , بابريكا<br>
+            <br>
+              السلطة :<br>
+           • طماطم مقطعة بشكل مكعبات. <br>  
+           • خيار مقطع بشكل مكعبات. <br>
+           • بقدونس مفروم ناعم  <br>
+           • بصل مفروم ناعم<br>
+           • ملعقة صغير من الملح , ملعقة كبيرة من عصير الليمون , ملعقة صغيرة من النعنع اليابس<br> 
+
+            </td>
+            </tr>
+        </tbody>
+        </table>
+        <button onclick="showForm()">متابعة</button>
+
+<!-- الفورم هون -->
+<div id="orderForm" style="display:none; margin-top:20px;">
+    <h2>إتمام الطلب</h2>
+
+    <label>الاسم الكامل</label>
+    <input type="text" id="fullName"><br><br>
+
+    <label>رقم الحساب المصرفي *</label>
+    <input type="text" id="bankAccount"><br><br>
+
+    <label>تاريخ الطلب</label>
+    <input type="date" id="orderDate"><br><br>
+
+    <label>رقم الموبايل</label>
+    <input type="text" id="phone"><br><br>
+
+    <button onclick="submitOrder()">إرسال</button>
+</div>
+
+</body>
+</html> 
+</table>
+</body>
+</html>
