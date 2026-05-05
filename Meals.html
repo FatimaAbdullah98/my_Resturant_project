@@ -1,10 +1,11 @@
 <!DOCTYPE html>
-<html lang = "ar">
+<html lang = "ar" dir="rtl">
     <head>
         <meta charset="UTF-8">
         <title>الوجبات</title>
         <link rel = "stylesheet" href = "css.Style.css">
-        <script src = "js.myFunctions.js"></script>
+        <script src="jquery.min.js"></script>
+        <script src= "js.myFunctions.js"></script>
     </head>
     <body>
         <h1>قائمة الوجبات</h1>
@@ -26,7 +27,7 @@
                 <td>وجبة سمك بوري مشوي</td>
                 <td>110000 ل.س</td>
                 <td><button onclick="toggleDetails('details1')">عرض</button></td>
-            <td><input type="checkbox"></td>
+                <td><input type="checkbox"></td>
             </tr>
 
             <!-- سطر التفاصيل -->
@@ -34,20 +35,17 @@
             <td colspan="5">
                 <div class="container">
                 <div class="text-content">
-             المطبخ: المصري<br>
+                  <b>المطبخ:</b>المصري<br>
              <br>
-             تصنيف الطعام: مأكولات بحرية<br>
+            <b>تصنيف الطعام :</b>مأكولات بحرية<br>
              <br>
-             المكونات:<br>
-            <br>
-
-             <br>
+             <b>المكونات :</b><br>
             4 سمكات بوري أحمر , مغسول ومنظف <br>
              بضعة أوراق مقطعة من الأوريجانو الطازج <br>
              ملعقة صغيرة واحدة من ملح الطعام<br>
              ملعقة صغيرة واحدة من الفلفل الأسود المطحون<br>
             <br>
-             الصلصة:<br>
+             <b>الصلصة :</b><br>
            • ملعقة كبيرة من زيت الزيتون. <br>  
            • 3 فصوص ثوم مقشرة ومقطعة بشكل ناعم. <br>
            • 1 حبة فلفل أحمر طازج، منزوعة البذور ومقطعة إلى شرائح رفيعة.  <br>
@@ -65,10 +63,8 @@
             <tr>
             <td>SF-002</td>
             <td>شاورما</td>
-            <td>50000</td>
-            <td>
-            <button onclick="toggleDetails('details2')">عرض</button>
-            </td>
+            <td>50000 ل.س</td>
+            <td><button onclick="toggleDetails('details2')">عرض</button></td>
             <td><input type="checkbox"></td>
             </tr>
 
@@ -77,20 +73,17 @@
             <td colspan="5">
                 <div class="container">
                 <div class="text-content">
-             المطبخ: السوري<br>
+             <b>المطبخ :</b>السوري<br>
              <br>
-             تصنيف الطعام: شاورما دجاج<br>
+            <b>تصنيف الطعام :</b>شاورما دجاج<br>
              <br>
-             المكونات:<br>
-            <br>
-
-             <br>
+             <b>المكونات :</b><br>
             صدور دجاج مقطعة لشرائح رفيعة <br>
              عصير الليمون , زيت زيتون , لبن زبادي , هيل مطحون , ثوم مهروس , <br>
              ملعقة صغيرة واحدة من ملح الطعام<br>
              ملعقة صغيرة واحدة من الفلفل الأسود المطحون<br>
             <br>
-             التومية (المايونيز):<br>
+            <b> التومية (المايونيز)</b><br>
            • 3 ملاعق كبيرة من النشاء , 1 كوب ماء. <br>  
            • 3 فصوص ثوم مقشرة ومقطعة بشكل ناعم. <br>
            • نصف كوب زيت نباتي (ذرة أو عباد الشمس).  <br>
@@ -107,10 +100,8 @@
             <tr>
             <td>SF-003</td>
             <td>بيتزا</td>
-            <td>75000</td>
-            <td>
-            <button onclick="toggleDetails('details3')">عرض</button>
-            </td>
+            <td>75000 ل.س</td>
+            <td><button onclick="toggleDetails('details3')">عرض</button></td>
             <td><input type="checkbox"></td>
             </tr>
 
@@ -119,20 +110,17 @@
             <td colspan="5">
                  <div class="container">
                 <div class="text-content">
-             المطبخ: الإيطالي<br>
+             <b>المطبخ :</b>الايطالي<br>
              <br>
-             تصنيف الطعام: الوجبات السريعة<br>
+             <b>تصنيف الطعام :</b>الوجبات السريعة<br>
              <br>
-             المكونات:<br>
-            <br>
-
-             <br>
+             <b>المكونات :</b><br>
             عجينة (دقيق , خميرة , ماء , زيت , سكر , ملح) <br>
              صلصة طماطم <br>
              جبنة الموزاريلا<br>
              طماطم , أوريجانو , زيتون أسود مقطع لشرائح , فلفل أخضر مقطع لشرائح<br>
             <br>
-              صوص الطماطم :<br>
+            <b>صوص الطماطم :</b><br>
            • 4 حبات طماطم كبيرة مقشرة ومفرومة ناعم. <br>  
            • 2 فص ثوم مهروس. <br>
            • ملعقتان كبيرتان من زيت الزيتون  <br>
@@ -147,10 +135,8 @@
             <tr>
             <td>SF-004</td>
             <td>برغر</td>
-            <td>60000</td>
-            <td>
-            <button onclick="toggleDetails('details4')">عرض</button>
-            </td>
+            <td>60000 ل.س</td>
+            <td><button onclick="toggleDetails('details4')">عرض</button></td>
             <td><input type="checkbox"></td>
             </tr>
 
@@ -159,20 +145,17 @@
             <td colspan="5">
                  <div class="container">
                 <div class="text-content">
-             المطبخ: الاميركي<br>
+             <b>المطبخ :</b>الاميركي<br>
              <br>
-             تصنيف الطعام: الوجبات السريعة<br>
+             <b>تصنيف الطعام :</b>الوجبات السريعة<br>
              <br>
-             المكونات:<br>
-            <br>
-
-             <br>
+             <b>المكونات :</b><br>
             قرص لحم مفروم (لحم بقري) <br>
              خبز همبرغر طري  <br>
              شرائح من جبن الشيدر<br>
              خس , شرائح طماطم , بصل , خيار مخلل<br>
             <br>
-              الصوصات :<br>
+            <b>الصوص :</b><br>
            • المايونيز. <br>  
            • كاتشب. <br>
            • خردل  <br>
@@ -187,10 +170,8 @@
             <tr>
             <td>SF-005</td>
             <td>كباب</td>
-            <td>90000</td>
-            <td>
-            <button onclick="toggleDetails('details5')">عرض</button>
-            </td>
+            <td>90000 ل.س</td>
+            <td><button onclick="toggleDetails('details5')">عرض</button></td>
             <td><input type="checkbox"></td>
             </tr>
 
@@ -199,20 +180,17 @@
             <td colspan="5">
                  <div class="container">
                 <div class="text-content">
-             المطبخ: السوري<br>
+             <b>المطبخ :</b>السوري<br>
              <br>
-             تصنيف الطعام: اللحوم المشوية<br>
+             <b>تصنيف الطعام :</b>اللحوم المشوية<br>
              <br>
-             المكونات:<br>
-            <br>
-
-             <br>
+            <b>المكونات :</b><br>
              لحم مفروم (ضأن أو عجل)<br>
              بصل مفروم ناعم  <br>
              بقدونس <br>
              ملعقة صغيرة من الملح , ملعقة صغيرة من الفلف الأسود , بابريكا<br>
             <br>
-              السلطة :<br>
+           <b>السلطة :</b><br>
            • طماطم مقطعة بشكل مكعبات. <br>  
            • خيار مقطع بشكل مكعبات. <br>
            • بقدونس مفروم ناعم  <br>
@@ -230,7 +208,7 @@
         <button onclick="showForm()">متابعة</button>
 
 <!-- الفورم هون -->
-<div id="orderForm" style="display:none; margin-top:20px;">
+<div id="orderForm" style="display:none; margin-top: 20px;">
     <h2>إتمام الطلب</h2>
 
     <label>الاسم الكامل</label>
@@ -247,9 +225,5 @@
 
     <button onclick="submitOrder()">إرسال</button>
 </div>
-
-</body>
-</html> 
-</table>
 </body>
 </html>
